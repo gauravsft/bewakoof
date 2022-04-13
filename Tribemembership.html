@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            height: 400px;
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            /* border: 2px solid red; */
+
+        }
+
+        #part1 {
+            background-color: rgb(255, 216, 53);
+            /* border: 2px solid black; */
+        }
+
+        #part1>img {
+            height: 150px;
+            width: 30%;
+            margin-left: 30%;
+            margin-top: 100px;
+        }
+
+        #part1>p {
+            margin-left: 30%;
+            font-size: 20px;
+        }
+
+        #part2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* background-color: #f8f8f8; */
+            /* border: 2px solid red; */
+            margin-left: 80px;
+            margin-top: 60px;
+
+        }
+
+        .container>#part2>div>h4 {
+            margin-top: 10px;
+            margin-bottom: -10px;
+        }
+
+        .heading1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .plan {
+            display: grid;
+            height: 100px;
+            width: 80%;
+            gap: 30px;
+            /* border: 2px solid red; */
+            margin: auto;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .plan1 {
+            display: flex;
+            float: left;
+            border: 1px solid black;
+
+            border-radius: 8px;
+        }
+
+        .plan2 {
+            display: flex;
+            float: left;
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+
+        input {
+            height: 30px;
+            width: 30px;
+            margin-left: 30px;
+            margin-top: 33px;
+        }
+
+        .plan>div>h2 {
+            margin-left: 30px;
+            margin-top: 35px;
+        }
+
+        .plan>div>h1 {
+            margin-left: 250px;
+            margin-top: 30px;
+        }
+
+        .membership {
+            background-color: rgb(246, 250, 245);
+            ;
+            display: flex;
+            float: left;
+            height: 80px;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 25px;
+
+        }
+
+        .membership>div>img {
+            height: 30px;
+            width: 30px;
+            margin-top: 23px;
+            margin-left: 30px;
+        }
+
+        .membership>div>h3 {
+            margin-top: 29px;
+            margin-left: 10px;
+        }
+
+        .membership>div>a>h2 {
+            margin-top: 25px;
+            margin-left: 30px;
+            color: teal;
+        }
+        .membership>div>a{
+            text-decoration: none;
+        }
+        #addToBag{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            width: 300px;
+            margin: auto;
+            margin-top: 135px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #userjoinddata{
+            text-align: center;
+            
+        }
+
+        .reasonContainer{
+            background-color: #f8f8f8;
+            /* border: 5px solid red; */
+            height: 300px;
+            width: 100%;
+            margin-top: 35px;
+        }
+
+        #reasontitle{
+            display: flex;
+            float: left;
+            margin-left: 10%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #reasontitleRight{
+            margin-left: 5px;
+            font-weight: normal;
+        }
+        .reason{
+            display: grid;
+            width: 80%;
+            grid-template-columns: repeat(5,1fr);
+            margin: auto;
+        }
+        .reason>div>img{
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="part1">
+            <img src="https://images.bewakoof.com/web/bewakoof-tribe-3-1636450939.png" alt="">
+            <p>Stay Trendy & Never Pay Full Price</p>
+        </div>
+        <div id="part2">
+            <div>
+                <img src="https://images.bewakoof.com/web/group-4.png" alt="">
+                <h4>Guaranteed Savings</h4>
+                <p>On Every Order</p>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/web/group-5.png" alt="">
+                <h4>Exclusive Perks</h4>
+                <p>Offers, Cashback etc.</p>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/web/group-7.png" alt="">
+                <h4>Early Access</h4>
+                <p>to Sales & Collections</p>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/web/group-6.png" alt="">
+                <h4>Exclusive Experiences</h4>
+                <p>Contests, Newsletters</p>
+            </div>
+        </div>
+    </div>
+    <h2 class="heading1">Pick A Plan</h2>
+
+    <div class="plan">
+        <div class="plan1">
+            <input type="radio">
+            <h2>3 Months</h2>
+            <h1>₹99</h1>
+        </div>
+        <div class="plan2">
+            <input type="radio">
+            <h2>12 Months</h2>
+            <h1>₹399</h1>
+        </div>
+    </div>
+
+    <div class="membership">
+        <div>
+            <img src="https://images.bewakoof.com/web/green-refresh-checked-1623750860.png" alt="">
+        </div>
+        <div>
+            <h3>Your Membership now gets automatically renewed on the last day of active plan.</h3>
+        </div>
+        <div>
+            <h3>Cancel anytime</h3>
+        </div>
+        <div>
+            <a href="">
+                <h2>Know more</h2>
+            </a>
+        </div>
+    </div>
+
+    
+    <input type="button" value="ADD TO BAG" id="addToBag">
+
+    <p id="userjoinddata">7,968 users have joined Tribe last week</p>
+
+    <div class="reasonContainer">
+        <div id="reasontitle">
+            <div>Five Reasons</div>
+            <div id="reasontitleRight">Why You Should Join</div>
+        </div>
+        <div class="reason">
+            <div>
+                <img src="https://images.bewakoof.com/web/group-8.png" alt="">
+                <h3>Guaranteed Discounts</h3>
+                <p>On all products. On every order.</p>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/web/group-6-3x.png" alt="">
+                <h3>Free Shipping</h3>
+                <p>On Everything you shop. No minimum purchase required.</p>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/web/group-9.png" alt="">
+                <h3>Exclusive Perks</h3>
+                <p>Tribe only Offers, Cashbacks, Products & Collections</p>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/web/group-10.png" alt="">
+                <h3>Early Access</h3>
+                <p>VIP early access to all Sales & Events.</p>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/web/group-11-3x-1628508219.png" alt="">
+                <h3>Exclusive Experiences</h3>
+                <p>Tribe only Contests, Newsletters, Giveaways & more</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
