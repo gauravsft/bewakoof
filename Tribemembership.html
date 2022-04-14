@@ -9,12 +9,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://images.bewakoof.com/web/favicon-1635856217.png"
         hreflang="en-in">
     <style>
-        *{
+        * {
             font-family: roboto;
         }
+
         .container {
             display: grid;
-            height: 400px;
+            height: auto;
             width: 100%;
             grid-template-columns: repeat(2, 1fr);
             /* border: 2px solid red; */
@@ -60,7 +61,7 @@
 
         .plan {
             display: grid;
-            height: 100px;
+            height: auto;
             width: 80%;
             gap: 30px;
             /* border: 2px solid red; */
@@ -102,14 +103,13 @@
 
         .membership {
             background-color: rgb(246, 250, 245);
-            ;
             display: flex;
             float: left;
-            height: 80px;
+            height: auto;
             width: 80%;
             margin-left: 10%;
             margin-top: 25px;
-
+            margin-bottom: 20px;
         }
 
         .membership>div>img {
@@ -129,10 +129,12 @@
             margin-left: 30px;
             color: teal;
         }
-        .membership>div>a{
+
+        .membership>div>a {
             text-decoration: none;
         }
-        #addToBag{
+
+        #addToBag {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -147,20 +149,20 @@
             font-weight: bold;
         }
 
-        #userjoinddata{
+        #userjoinddata {
             text-align: center;
-            
+
         }
 
-        .reasonContainer{
+        .reasonContainer {
             background-color: #f8f8f8;
             /* border: 5px solid red; */
-            height: 300px;
+            height: auto;
             width: 100%;
             margin-top: 35px;
         }
 
-        #reasontitle{
+        #reasontitle {
             display: flex;
             float: left;
             margin-left: 10%;
@@ -170,30 +172,32 @@
             font-weight: bold;
         }
 
-        #reasontitleRight{
+        #reasontitleRight {
             margin-left: 5px;
             font-weight: normal;
         }
-        .reason{
+
+        .reason {
             display: grid;
             width: 80%;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(5, 1fr);
             margin: auto;
         }
-        .reason>div>img{
+
+        .reason>div>img {
             height: 30px;
             width: 30px;
         }
 
 
-        .savingContainer{
-            height: 430px;
+        .savingContainer {
+            height: auto;
             width: 100%;
             margin-top: 55px;
             /* border: 5px solid red; */
         }
 
-        #savingTitle{
+        #savingTitle {
             display: flex;
             float: left;
             margin-left: 10%;
@@ -202,54 +206,60 @@
             font-weight: bold;
         }
 
-        #savingTitleRight{
+        #savingTitleRight {
             margin-left: 10px;
             font-weight: normal;
         }
 
-        .saving{
+        .saving {
             display: grid;
             width: 80%;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 25px;
             margin: auto;
             margin-top: 10px;
         }
-        .saving>div>img{
+
+        .saving>div>img {
             width: 100%;
             height: 250px;
         }
-        .saving>div>h4{
+
+        .saving>div>h4 {
             color: green;
             margin-top: -10px;
         }
-        .saving>div>h3{
+
+        .saving>div>h3 {
             margin-top: -10px;
         }
 
-        .topTriBeeeContainer{
-            height: 480px;
+        .topTriBeeeContainer {
+            height: auto;
             width: 100%;
             margin-top: 55px;
+            margin-bottom: 30px;
             /* border: 2px solid red; */
         }
 
-        .topTriBeee{
+        .topTriBeee {
             display: grid;
-            grid-template-columns: repeat(7,1fr);
+            grid-template-columns: repeat(7, 1fr);
             width: 80%;
             gap: 40px;
             margin: auto;
             margin-top: 60px;
         }
-        .center{
+
+        .center {
             margin-top: 100px;
         }
-        .down{
+
+        .down {
             margin-top: 30px;
         }
 
-        #titleTOPRriBee{
+        #titleTOPRriBee {
             display: flex;
             float: left;
             margin-left: 10%;
@@ -259,56 +269,134 @@
             margin-top: 20px;
         }
 
-        #titleTOPRriBeeRight{
+        #titleTOPRriBeeRight {
             margin-left: 10px;
             font-weight: normal;
         }
-        .topTriBeee>div>div>img,.topTriBeee>div>img{
+
+        .topTriBeee>div>div>img,
+        .topTriBeee>div>img {
             height: 90px;
             width: 90px;
             border-radius: 45px;
         }
-        .topTriBeee>div>div>h4 ,.topTriBeee>div>h4{
+
+        .topTriBeee>div>div>h4,
+        .topTriBeee>div>h4 {
             margin-top: 5px;
             margin-bottom: 10px;
         }
 
-        .faqsContainer{
-            height: 1000px;
+        .faqsContainer {
+            height: auto;
             width: 100%;
             background-color: #f8f8f8;
         }
-        .question{
+
+        .question {
             display: grid;
             width: 80%;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
             /* grid-template-rows: repeat(5,1fr); */
             margin: auto;
             /* border: 1px solid black; */
             margin-bottom: 50px;
-            
+
         }
-        .question>div>p{
+
+        .question>div>p {
             margin-top: -10px;
         }
 
-        #faqTitle{
+        #faqTitle {
             display: flex;
             flex-direction: column;
             margin-left: 10%;
             font-size: 25px;
             font-weight: bold;
             margin-bottom: 40px;
-            
-            
+
+
         }
-        #faqTitle>h1{
+
+        #faqTitle>h1 {
             margin-top: 50px;
             margin-bottom: 15px;
         }
-        .question >div{
+
+        .question>div {
             padding: 30px;
             border: 1px solid black;
+        }
+
+
+        @media all and (min-width:10px) and (max-width:450px) {
+            .container {
+                width: 95%;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            /* .heading1 {
+                margin-top: 250px;
+            } */
+
+            .plan {
+
+                /* width: 100%; */
+                margin: auto;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .topTriBeee {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .reason {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .saving {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .plan>div>h1 {
+                margin-left: 180px;
+            }
+
+            .membership {
+                flex-direction: column;
+                margin-left: 10%;
+                margin-top: 25px;
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+        @media all and (min-width:450px) and (max-width:850px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+                margin: auto;
+            }
+
+            .plan {
+
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .topTriBeee {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .reason {
+                grid-template-columns: repeat(3, 1fr);
+                height: auto;
+            }
+
+            .saving {
+                grid-template-columns: repeat(3, 1fr);
+
+            }
         }
     </style>
 </head>
@@ -374,7 +462,7 @@
         </div>
     </div>
 
-    
+
     <input type="button" value="ADD TO BAG" id="addToBag">
 
     <p id="userjoinddata">7,968 users have joined Tribe last week</p>
@@ -422,36 +510,41 @@
         </div>
         <div class="saving">
             <div>
-                <img src="https://images.bewakoof.com/t320/marvel-logo-comic-printed-small-backpack-avl-printed-small-backpack-273335-1595496486.jpg" alt="">
-                
+                <img src="https://images.bewakoof.com/t320/marvel-logo-comic-printed-small-backpack-avl-printed-small-backpack-273335-1595496486.jpg"
+                    alt="">
+
                 <p>Regular Price: ₹329</p>
                 <h3>TriBe Price: ₹247</h3>
                 <h4>Savings: ₹82</h4>
             </div>
             <div>
-                <img src="https://images.bewakoof.com/t320/black-neon-lime-contrast-collar-pique-polo-t-shirt-men-s-contrast-collar-pique-polo-271917-1595231318.jpg" alt="">
-                
+                <img src="https://images.bewakoof.com/t320/black-neon-lime-contrast-collar-pique-polo-t-shirt-men-s-contrast-collar-pique-polo-271917-1595231318.jpg"
+                    alt="">
+
                 <p>Regular Price: ₹549</p>
                 <h3>TriBe Price: ₹418</h3>
                 <h4>Savings: ₹131</h4>
             </div>
             <div>
-                <img src="https://images.bewakoof.com/t320/space-grey-hoodie-sweatshirt-women-s-plain-melange-hoodie-sweatshirt-276353-1610690636.jpg" alt="">
-                
+                <img src="https://images.bewakoof.com/t320/space-grey-hoodie-sweatshirt-women-s-plain-melange-hoodie-sweatshirt-276353-1610690636.jpg"
+                    alt="">
+
                 <p>Regular Price: ₹699</p>
                 <h3>TriBe Price: ₹538</h3>
                 <h4>Savings: ₹161</h4>
             </div>
             <div>
-                <img src="https://images.bewakoof.com/t320/solid-baby-pink-ankle-length-socks-women-s-ankle-length-socks-272290-1585286351.jpg" alt="">
-                
+                <img src="https://images.bewakoof.com/t320/solid-baby-pink-ankle-length-socks-women-s-ankle-length-socks-272290-1585286351.jpg"
+                    alt="">
+
                 <p>Regular Price: ₹149</p>
                 <h3>TriBe Price: ₹116</h3>
                 <h4>Savings: ₹33</h4>
             </div>
             <div>
-                <img src="https://images.bewakoof.com/t320/galaxy-blue--happy-yellow-shoulder-sleeve-t-shirt-women-s-plain-shoulder-sleeve-panel-regular-t-shirt-276099-1601292786.jpg" alt="">
-                
+                <img src="https://images.bewakoof.com/t320/galaxy-blue--happy-yellow-shoulder-sleeve-t-shirt-women-s-plain-shoulder-sleeve-panel-regular-t-shirt-276099-1601292786.jpg"
+                    alt="">
+
                 <p>Regular Price: ₹299</p>
                 <h3>TriBe Price: ₹232</h3>
                 <h4>Savings: ₹67</h4>
@@ -488,12 +581,12 @@
                 <div>
                     <img src="https://images.bewakoof.com/web/MohitJain-9826319796-Cropped.jpg" alt="">
                     <h4>Mohit Jain</h4>
-                <span>Saved ₹4652</span>
+                    <span>Saved ₹4652</span>
                 </div>
                 <div class="down">
                     <img src="https://images.bewakoof.com/web/Nagesh--9407980933-Cropped.jpg" alt="">
                     <h4>Nagesh</h4>
-                <span>Saved ₹3247</span>
+                    <span>Saved ₹3247</span>
                 </div>
             </div>
             <div class="center">
@@ -513,7 +606,7 @@
                     <span>Saved ₹8877</span>
                 </div>
             </div>
-            <div  class="center">
+            <div class="center">
                 <img src="https://images.bewakoof.com/web/Kanhaiya-9529745569-Cropped.jpg" alt="">
                 <h4>Rohit Segal</h4>
                 <span>Saved ₹4243</span>
@@ -522,12 +615,12 @@
                 <div>
                     <img src="https://images.bewakoof.com/web/MohitJain-9826319796-Cropped.jpg" alt="">
                     <h4>Mohit Jain</h4>
-                <span>Saved ₹4652</span>
+                    <span>Saved ₹4652</span>
                 </div>
                 <div class="down">
                     <img src="https://images.bewakoof.com/web/Nagesh--9407980933-Cropped.jpg" alt="">
                     <h4>Nagesh</h4>
-                <span>Saved ₹3247</span>
+                    <span>Saved ₹3247</span>
                 </div>
             </div>
         </div>
@@ -544,28 +637,34 @@
         <div class="question">
             <div>
                 <h5>How do I become a TriBe member?</h5>
-                <p>Joining the TriBe is simple. Follow the link given below and simply add your TriBe membership plan to your cart. Proceed to make your payment online. Your TriBe membership will be activated once your payment is successful. You will receive a welcome email confirming your membership.</p>
+                <p>Joining the TriBe is simple. Follow the link given below and simply add your TriBe membership plan to
+                    your cart. Proceed to make your payment online. Your TriBe membership will be activated once your
+                    payment is successful. You will receive a welcome email confirming your membership.</p>
                 <a href="">Join the TriBe</a>
             </div>
             <div>
                 <h5>Can I upgrade my TriBe Membership plan?</h5>
-                <p>Currently we do not have an upgrade option but you can simply renew your TriBe membership for a longer term at the time of renewal.</p>
-                
+                <p>Currently we do not have an upgrade option but you can simply renew your TriBe membership for a
+                    longer term at the time of renewal.</p>
+
             </div>
             <div>
                 <h5>Can I cancel my TriBe membership?</h5>
-                <p>You can opt out of the TriBe any time. However, please note that we do not offer any refunds on the TriBe membership itself.</p>
-                
+                <p>You can opt out of the TriBe any time. However, please note that we do not offer any refunds on the
+                    TriBe membership itself.</p>
+
             </div>
             <div>
                 <h5>Do I need to save my card details with Bewakoof to become a TriBe member?</h5>
-                <p>No, you do not need to save a card with us to become a TriBe member. However, please note that you will have to pay online while purchasing the TriBe membership itself. Subsequent orders can be paid online or as COD.</p>
-                
+                <p>No, you do not need to save a card with us to become a TriBe member. However, please note that you
+                    will have to pay online while purchasing the TriBe membership itself. Subsequent orders can be paid
+                    online or as COD.</p>
+
             </div>
             <div>
                 <h5>Will my TriBe membership auto renew?</h5>
                 <p>No, currently we do not have an auto renew option for our TriBe memberships.</p>
-                
+
             </div>
         </div>
     </div>
