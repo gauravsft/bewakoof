@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            font-family: roboto;
+        }
         .container {
             display: grid;
             height: 400px;
@@ -179,6 +182,132 @@
             height: 30px;
             width: 30px;
         }
+
+
+        .savingContainer{
+            height: 430px;
+            width: 100%;
+            margin-top: 55px;
+            /* border: 5px solid red; */
+        }
+
+        #savingTitle{
+            display: flex;
+            float: left;
+            margin-left: 10%;
+            margin-bottom: 30px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #savingTitleRight{
+            margin-left: 10px;
+            font-weight: normal;
+        }
+
+        .saving{
+            display: grid;
+            width: 80%;
+            grid-template-columns: repeat(5,1fr);
+            gap: 25px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .saving>div>img{
+            width: 100%;
+            height: 250px;
+        }
+        .saving>div>h4{
+            color: green;
+            margin-top: -10px;
+        }
+        .saving>div>h3{
+            margin-top: -10px;
+        }
+
+        .topTriBeeeContainer{
+            height: 480px;
+            width: 100%;
+            margin-top: 55px;
+            /* border: 2px solid red; */
+        }
+
+        .topTriBeee{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            width: 80%;
+            gap: 40px;
+            margin: auto;
+            margin-top: 60px;
+        }
+        .center{
+            margin-top: 100px;
+        }
+        .down{
+            margin-top: 30px;
+        }
+
+        #titleTOPRriBee{
+            display: flex;
+            float: left;
+            margin-left: 10%;
+            margin-bottom: 30px;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #titleTOPRriBeeRight{
+            margin-left: 10px;
+            font-weight: normal;
+        }
+        .topTriBeee>div>div>img,.topTriBeee>div>img{
+            height: 90px;
+            width: 90px;
+            border-radius: 45px;
+        }
+        .topTriBeee>div>div>h4 ,.topTriBeee>div>h4{
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .faqsContainer{
+            height: 1000px;
+            width: 100%;
+            background-color: #f8f8f8;
+        }
+        .question{
+            display: grid;
+            width: 80%;
+            grid-template-columns: repeat(1,1fr);
+            /* grid-template-rows: repeat(5,1fr); */
+            margin: auto;
+            /* border: 1px solid black; */
+            margin-bottom: 50px;
+            
+        }
+        .question>div>p{
+            margin-top: -10px;
+        }
+
+        #faqTitle{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            
+            
+        }
+        #faqTitle>h1{
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
+        .question >div{
+            padding: 30px;
+            border: 1px solid black;
+        }
     </style>
 </head>
 
@@ -278,6 +407,163 @@
                 <img src="https://images.bewakoof.com/web/group-11-3x-1628508219.png" alt="">
                 <h3>Exclusive Experiences</h3>
                 <p>Tribe only Contests, Newsletters, Giveaways & more</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="savingContainer">
+        <div id="savingTitle">
+            <div>Exclusive Savings</div>
+            <div id="savingTitleRight">Only for our TriBees</div>
+        </div>
+        <div class="saving">
+            <div>
+                <img src="https://images.bewakoof.com/t320/marvel-logo-comic-printed-small-backpack-avl-printed-small-backpack-273335-1595496486.jpg" alt="">
+                
+                <p>Regular Price: ₹329</p>
+                <h3>TriBe Price: ₹247</h3>
+                <h4>Savings: ₹82</h4>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/t320/black-neon-lime-contrast-collar-pique-polo-t-shirt-men-s-contrast-collar-pique-polo-271917-1595231318.jpg" alt="">
+                
+                <p>Regular Price: ₹549</p>
+                <h3>TriBe Price: ₹418</h3>
+                <h4>Savings: ₹131</h4>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/t320/space-grey-hoodie-sweatshirt-women-s-plain-melange-hoodie-sweatshirt-276353-1610690636.jpg" alt="">
+                
+                <p>Regular Price: ₹699</p>
+                <h3>TriBe Price: ₹538</h3>
+                <h4>Savings: ₹161</h4>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/t320/solid-baby-pink-ankle-length-socks-women-s-ankle-length-socks-272290-1585286351.jpg" alt="">
+                
+                <p>Regular Price: ₹149</p>
+                <h3>TriBe Price: ₹116</h3>
+                <h4>Savings: ₹33</h4>
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/t320/galaxy-blue--happy-yellow-shoulder-sleeve-t-shirt-women-s-plain-shoulder-sleeve-panel-regular-t-shirt-276099-1601292786.jpg" alt="">
+                
+                <p>Regular Price: ₹299</p>
+                <h3>TriBe Price: ₹232</h3>
+                <h4>Savings: ₹67</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="topTriBeeeContainer">
+        <div id="titleTOPRriBee">
+            <div>Take A Look</div>
+            <div id="titleTOPRriBeeRight">At Our Top TriBees</div>
+        </div>
+
+        <div class="topTriBeee">
+            <div class="twoMember">
+                <div>
+                    <img src="https://images.bewakoof.com/web/Amandeep-Singh--9888890388-Cropped.jpg" alt="">
+                    <h4>Amandeep</h4>
+                    <span>Saved ₹8877</span>
+                </div>
+                <div class="down">
+                    <img src="https://images.bewakoof.com/web/Kanhaiya-9529745569-Cropped.jpg" alt="">
+                    <h4>Kunal</h4>
+                    <span>Saved ₹8877</span>
+                </div>
+            </div>
+            <div class="center">
+                <img src="https://images.bewakoof.com/web/Kanhaiya-9529745569-Cropped.jpg" alt="">
+                <h4>Rohit Segal</h4>
+                <span>Saved ₹4243</span>
+            </div>
+            <div class="twoMember">
+                <div>
+                    <img src="https://images.bewakoof.com/web/MohitJain-9826319796-Cropped.jpg" alt="">
+                    <h4>Mohit Jain</h4>
+                <span>Saved ₹4652</span>
+                </div>
+                <div class="down">
+                    <img src="https://images.bewakoof.com/web/Nagesh--9407980933-Cropped.jpg" alt="">
+                    <h4>Nagesh</h4>
+                <span>Saved ₹3247</span>
+                </div>
+            </div>
+            <div class="center">
+                <img src="https://images.bewakoof.com/web/IMG-20201201-150253-958-Cropped.jpg" alt="">
+                <h4>Sakun Suri</h4>
+                <span>Saved ₹5388</span>
+            </div>
+            <div class="twoMember">
+                <div>
+                    <img src="https://images.bewakoof.com/web/Amandeep-Singh--9888890388-Cropped.jpg" alt="">
+                    <h4>Amandeep</h4>
+                    <span>Saved ₹8877</span>
+                </div>
+                <div class="down">
+                    <img src="https://images.bewakoof.com/web/Kanhaiya-9529745569-Cropped.jpg" alt="">
+                    <h4>Kunal</h4>
+                    <span>Saved ₹8877</span>
+                </div>
+            </div>
+            <div  class="center">
+                <img src="https://images.bewakoof.com/web/Kanhaiya-9529745569-Cropped.jpg" alt="">
+                <h4>Rohit Segal</h4>
+                <span>Saved ₹4243</span>
+            </div>
+            <div class="twoMember">
+                <div>
+                    <img src="https://images.bewakoof.com/web/MohitJain-9826319796-Cropped.jpg" alt="">
+                    <h4>Mohit Jain</h4>
+                <span>Saved ₹4652</span>
+                </div>
+                <div class="down">
+                    <img src="https://images.bewakoof.com/web/Nagesh--9407980933-Cropped.jpg" alt="">
+                    <h4>Nagesh</h4>
+                <span>Saved ₹3247</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="faqsContainer">
+        <div id="faqTitle">
+            <div>FAQs</div>
+            <div>All Your Questions Answered</div>
+        </div>
+
+        <div class="question">
+            <div>
+                <h5>How do I become a TriBe member?</h5>
+                <p>Joining the TriBe is simple. Follow the link given below and simply add your TriBe membership plan to your cart. Proceed to make your payment online. Your TriBe membership will be activated once your payment is successful. You will receive a welcome email confirming your membership.</p>
+                <a href="">Join the TriBe</a>
+            </div>
+            <div>
+                <h5>Can I upgrade my TriBe Membership plan?</h5>
+                <p>Currently we do not have an upgrade option but you can simply renew your TriBe membership for a longer term at the time of renewal.</p>
+                
+            </div>
+            <div>
+                <h5>Can I cancel my TriBe membership?</h5>
+                <p>You can opt out of the TriBe any time. However, please note that we do not offer any refunds on the TriBe membership itself.</p>
+                
+            </div>
+            <div>
+                <h5>Do I need to save my card details with Bewakoof to become a TriBe member?</h5>
+                <p>No, you do not need to save a card with us to become a TriBe member. However, please note that you will have to pay online while purchasing the TriBe membership itself. Subsequent orders can be paid online or as COD.</p>
+                
+            </div>
+            <div>
+                <h5>Will my TriBe membership auto renew?</h5>
+                <p>No, currently we do not have an auto renew option for our TriBe memberships.</p>
+                
             </div>
         </div>
     </div>
