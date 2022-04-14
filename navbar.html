@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewakoof</title>
+</head>
+<style>
+    #navbar{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(2,40px);
+        margin: 0% 10% 0% 10%;
+        padding: 0%;
+        
+        background-color: aliceblue;
+    }
+    .links{
+        display: flex;
+        gap:2%;
+
+    }
+    h3{
+        margin: 0%;
+        font-size: 13px;
+    }
+    .links>a{
+        font-size: 10px;
+        margin: 0%;
+
+    }
+    .links>img{
+        width:200px;
+        height:20px;
+        justify-content: baseline;
+    }
+    * {
+    box-sizing: border-box;
+    }
+
+    #loginSearch,#contactUs{
+        display: flex;
+        gap:20px;
+        justify-content: right;
+    }
+    #contactUs>a{
+        font-size: 13px;
+    }
+    a{
+        text-decoration: none;
+    }
+#topBar{
+width: 100%;
+height:auto;
+position: fixed;
+background-color: azure;
+}
+</style>
+<body>
+<div id="topBar">
+    <div id="navbar">
+       
+            <div class="links">
+            <a href="./womens.html">Offer</a>
+            <a href="./navbar.html">Fanbook</a>
+            <a href="./womens.html">Download app</a>
+            <a href="">Trib Membership</a>
+            </div>
+
+            
+                <div id="contactUs">
+                 <a href="">Contact us</a>
+                 <a href="">Track Order</a>
+                </div>
+            
+
+            <div class="links">
+                <img src="https://images.bewakoof.com/web/bewakoof-logo-white-1648550013.png" />
+                <h3><a href="">HOME</a></h3>
+                <h3><a href="">MENS</a></h3>
+                <h3><a href="">WOMENS</a></h3>
+                <h3><a href="">MOBILE COVERS</a></h3>
+            </div>
+            
+            
+            
+            <div id="loginSearch">
+                <form class="example" action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                  </form>
+                  <a href="">Login</a>
+                  <a href="">Cart</a>
+               </div>
+           
+
+                
+            </div>
+    </div>
+    <hr>
+</div>
+
+
+    
+</body>
+</html>
