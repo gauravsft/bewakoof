@@ -22,6 +22,8 @@
             padding: 10px;
             /* border: 2px solid red; */
             cursor: pointer;
+            position: fixed;
+
         }
 
         .rightPart {
@@ -30,6 +32,7 @@
             height: auto;
             gap: 25px;
             width: 65%;
+            margin-left: 25%;
             /* border: 2px solid red; */
         }
 
@@ -61,29 +64,82 @@
             margin-right: 11%;
         }
 
-        #filter{
+        #filter {
             display: flex;
             justify-content: space-between;
         }
-        .fill{
+
+        .fill {
             margin-bottom: -20px;
         }
-        #clear{
+
+        #clear {
             color: teal;
+        }
+
+
+        @media all and (min-width:10px) and (max-width:450px) {
+            .leftPart {
+
+                width: 80%;
+                float: none;
+                position: sticky;
+
+            }
+
+            .rightPart {
+
+                grid-template-columns: repeat(1, 1fr);
+                gap: 25px;
+                width: 90%;
+                margin-top: 50px;
+                margin-left: 0%;
+
+            }
+
+            .leftsort {
+
+                margin-top: 30px;
+            }
+        }
+
+        @media all and (min-width:450px) and (max-width:850px) {
+            .leftPart {
+
+                width: 80%;
+                float: none;
+                position: sticky;
+
+            }
+
+            .rightPart {
+
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+                width: 90%;
+                margin-top: 50px;
+                margin-left: 0%;
+
+            }
+
+            .leftsort {
+
+                margin-top: 30px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Men Clothing &nbsp;(2470)</h1>
+    <h1 id="menheading">Men Clothing &nbsp;(15)</h1>
     <div class="fullPart">
         <div class="leftPart">
             <div id="filter">
                 <div class="fill">
                     <h4>FILTERS</h4>
                 </div>
-                <div class="fill" >
+                <div class="fill">
                     <h5 id="clear">Clear</h5>
                 </div>
             </div>
@@ -437,28 +493,28 @@
 
 
     var filterdData = JSON.parse(JSON.stringify(mensData));
-    
+
     //sorting top button function
 
     document.querySelector('#SortByTop').addEventListener('change', function () {
         var sortType = document.querySelector('#SortByTop').value;
         if (sortType === 'SortBy') {
             displayData(mensData);
-        } 
-        else if(sortType=="Popular"){
-            var searchData=searchPopularAndnew(sortType);
+        }
+        else if (sortType == "Popular") {
+            var searchData = searchPopularAndnew(sortType);
             displayData(searchData);
         }
-        else if(sortType=="New"){
-            var searchData=searchPopularAndnew(sortType);
+        else if (sortType == "New") {
+            var searchData = searchPopularAndnew(sortType);
             displayData(searchData);
         }
-        else if(sortType=="LowtoHigh"){
-            filterdData.sort(function(a,b){return a.price - b.price});
+        else if (sortType == "LowtoHigh") {
+            filterdData.sort(function (a, b) { return a.price - b.price });
             displayData(filterdData);
         }
-        else if(sortType=="HightoLow"){
-            filterdData.sort(function(a,b){return b.price - a.price});
+        else if (sortType == "HightoLow") {
+            filterdData.sort(function (a, b) { return b.price - a.price });
             displayData(filterdData);
         }
     });
@@ -468,34 +524,34 @@
         var sortType = document.querySelector('#SortByLeft').value;
         if (sortType === 'SortBy') {
             displayData(mensData);
-        } 
-        else if(sortType=="Popular"){
-            var searchData=searchPopularAndnew(sortType);
+        }
+        else if (sortType == "Popular") {
+            var searchData = searchPopularAndnew(sortType);
             displayData(searchData);
         }
-        else if(sortType=="New"){
-            var searchData=searchPopularAndnew(sortType);
+        else if (sortType == "New") {
+            var searchData = searchPopularAndnew(sortType);
             displayData(searchData);
         }
-        else if(sortType=="LowtoHigh"){
-            filterdData.sort(function(a,b){return a.price - b.price});
+        else if (sortType == "LowtoHigh") {
+            filterdData.sort(function (a, b) { return a.price - b.price });
             displayData(filterdData);
         }
-        else if(sortType=="HightoLow"){
-            filterdData.sort(function(a,b){return b.price - a.price});
+        else if (sortType == "HightoLow") {
+            filterdData.sort(function (a, b) { return b.price - a.price });
             displayData(filterdData);
         }
     });
 
     //popular and New function
     function searchPopularAndnew(sortType) {
-      var data = mensData.filter(function(product) {
-        if(product.type==sortType) {
-          return true;
-        }
-        return false;
-      });
-      return data;
+        var data = mensData.filter(function (product) {
+            if (product.type == sortType) {
+                return true;
+            }
+            return false;
+        });
+        return data;
     }
 
     function displayData(mensData) {
@@ -552,13 +608,13 @@
 
     // size function
     function searchSize(searchValue) {
-      var data = mensData.filter(function(product) {
-        if(product.size===searchValue) {
-          return true;
-        }
-        return false;
-      });
-      return data;
+        var data = mensData.filter(function (product) {
+            if (product.size === searchValue) {
+                return true;
+            }
+            return false;
+        });
+        return data;
     }
     //size function call
     document.querySelector('#Size').addEventListener('change', function () {
@@ -570,13 +626,13 @@
 
     // Brand function
     function searchBrand(searchValue) {
-      var data = mensData.filter(function(product) {
-        if(product.brand===searchValue) {
-          return true;
-        }
-        return false;
-      });
-      return data;
+        var data = mensData.filter(function (product) {
+            if (product.brand === searchValue) {
+                return true;
+            }
+            return false;
+        });
+        return data;
     }
     //Brand function call
     document.querySelector('#Brand').addEventListener('change', function () {
@@ -588,7 +644,7 @@
 
     // filter clear function
 
-    document.querySelector("#clear").addEventListener("click", function(){
+    document.querySelector("#clear").addEventListener("click", function () {
         window.location.reload();
     })
 
