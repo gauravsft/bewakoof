@@ -554,6 +554,14 @@
         return data;
     }
 
+    var cartData;
+
+    if (localStorage.getItem('cartData') === null) {
+        cartData = [];
+    } else {
+        cartData = JSON.parse(localStorage.getItem('cartData'));
+    }
+
     function displayData(mensData) {
         document.querySelector('.rightPart').innerHTML = '';
         mensData.forEach(function (menData) {
@@ -579,7 +587,22 @@
             strikedoffprice.style.backgroundColor = "#e9f0ea";
 
 
-            box.append(img, name, price, strikedoffprice);
+            var cartButton = document.createElement('button');
+            cartButton.innerText = 'Add to cart';
+            cartButton.style.width = "100%";
+            cartButton.style.backgroundColor = "black";
+            cartButton.style.color = "white";
+            cartButton.style.cursor="pointer";
+
+            cartButton.addEventListener('click', function () {
+                cartData.push(menData);
+                console.log(cartData);
+                alert("item added successfuly to cart");
+                localStorage.setItem('cartData', JSON.stringify(cartData));
+            });
+
+
+            box.append(img, name, price, strikedoffprice, cartButton);
             document.querySelector('.rightPart').append(box)
         });
 

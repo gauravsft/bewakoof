@@ -8,82 +8,506 @@
     <title>Online Shopping for Men, Women Clothing & Accessories at Bewakoof</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://images.bewakoof.com/web/favicon-1635856217.png"
         hreflang="en-in">
+    <style>
+        body {
+            margin-left: 8%;
+        }
+
+        .leftPart {
+            margin-right: 2%;
+            display: grid;
+            height: auto;
+            width: 20%;
+            float: left;
+            padding: 10px;
+            /* border: 2px solid red; */
+            cursor: pointer;
+            position: fixed;
+
+        }
+
+        .rightPart {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: auto;
+            gap: 25px;
+            width: 65%;
+            margin-left: 25%;
+            /* border: 2px solid red; */
+        }
+
+        .product {
+            width: 100%;
+            height: 330px;
+        }
+
+        .fliterpart1 {
+            display: grid;
+        }
+
+        select {
+            border: none;
+        }
+
+        option {
+            border: none;
+        }
+
+
+        .classFilter {
+            margin-top: 30px;
+        }
+
+        .leftsort {
+            float: right;
+            margin-top: -30px;
+            margin-right: 11%;
+        }
+
+        #filter {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fill {
+            margin-bottom: -20px;
+        }
+
+        #clear {
+            color: teal;
+        }
+
+
+        @media all and (min-width:10px) and (max-width:450px) {
+            .leftPart {
+
+                width: 80%;
+                float: none;
+                position: sticky;
+
+            }
+
+            .rightPart {
+
+                grid-template-columns: repeat(1, 1fr);
+                gap: 25px;
+                width: 90%;
+                margin-top: 50px;
+                margin-left: 0%;
+
+            }
+
+            .leftsort {
+
+                margin-top: 30px;
+            }
+        }
+
+        @media all and (min-width:450px) and (max-width:850px) {
+            .leftPart {
+
+                width: 80%;
+                float: none;
+                position: sticky;
+
+            }
+
+            .rightPart {
+
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+                width: 90%;
+                margin-top: 50px;
+                margin-left: 0%;
+
+            }
+
+            .leftsort {
+
+                margin-top: 30px;
+            }
+        }
+    </style>
 </head>
-<style>
-    #container {
-        display: grid;
-        height: auto;
-        width: 80%;
-        grid-template-columns: repeat(2,1fr);
-        background-color: #f5f5f5;
-        margin: auto;
-    }
-
-    .brand{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        align-items: center;
-        /* margin: auto; */
-        margin-left: 40px;
-        gap: 20px;
-    }
-    .brand>div{
-        cursor: pointer;
-    }
-    #heading {
-        text-align: center;
-    }
-
-    sup {
-        color: red;
-        font-weight: bold;
-        font-size: 10px;
-    }
-
-    #phone {
-        margin-left: 30%;
-    }
-</style>
 
 <body>
-    <h1 id="heading">Mobile Covers And Cases</h1>
-    <div id="container">
-        <div class="brand">
 
-            <div>
-               <a href="http://">Xiaomi <sup> NEW</sup></a> 
+    <h1 id="menheading">Mobile Covers And Cases &nbsp;(15)</h1>
+    <div class="fullPart">
+        <div class="leftPart">
+            <div id="filter">
+                <div class="fill">
+                    <h4>FILTERS</h4>
+                </div>
+                <div class="fill">
+                    <h5 id="clear">Clear</h5>
+                </div>
             </div>
-            <div>
-                Oneplus <sup> NEW</sup>
+            <div class="fliterpart1">
+                <select name="Brand" id="Brand" class="classFilter">
+                    <option value="Brand">Brand</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                    <option value="Oneplus">Oneplus</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Realme">Realme</option>
+                    <option value="Vivo">Vivo</option>
+                    <option value="Oppo">Oppo</option>
+                    <option value="Infinix">Infinix</option>
+                    <option value="Moto">Moto</option>
+                </select>
+                <select name="Model" id="Model" class="classFilter">
+                    <option value="Model">Model</option>
+                    <option value="Redmi Note 8 Pro">Redmi Note 8 Pro</option>
+                    <option value="Redmi Note 7 Pro">Redmi Note 7 Pro</option>
+                    <option value="Redmi Note 6 Pro">Redmi Note 6 Pro</option>
+                    <option value="OnePlus 8 Pro">OnePlus 8 Pro</option>
+                    <option value="OnePlus 7 Pro">OnePlus 7 Pro</option>
+                    <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+                    <option value="iPhone 12">iPhone 12</option>
+                    <option value="Samsung Galaxy Note 10 lite">Samsung Galaxy Note 10 lite</option>
+                    <option value="Samsung Galaxy A71">Samsung Galaxy A71</option>
+                    <option value="Realme 5 Pro">Realme 5 Pro</option>
+                    <option value="Realme 6 Pro">Realme 6 Pro</option>
+                    <option value="Vivo V11 Pro">Vivo V11 Pro</option>
+                    <option value="Vivo Y73">Vivo Y73</option>
+                    <option value="Vivo Y91">Vivo Y91</option>
+                    <option value="Oppo F11 Pro">Oppo F11 Pro</option>
+                    <option value="Oppo F17 Pro">Oppo F17 Pro</option>
+                </select>
+
+                <select name="Sort By" id="SortByLeft" class="classFilter">
+                    <option value="SortBy">Sort By</option>
+                    <option value="Popular">Popular</option>
+                    <option value="New">New</option>
+                    <option value="HightoLow">Price : High to Low</option>
+                    <option value="LowtoHigh">Price : Low to High</option>
+                </select>
+
             </div>
-            <div>
-                Apple <sup> NEW</sup>
-            </div>
-            <div>
-                Samsung <sup> NEW</sup>
-            </div>
-            <div>
-                Realme <sup> NEW</sup>
-            </div>
-            <div>
-                Vivo <sup> NEW</sup>
-            </div>
-            <div>
-                Oppo <sup> NEW</sup>
-            </div>
-            <div>
-                Infinix <sup> NEW</sup>
-            </div>
-            <div>
-                Moto <sup> NEW</sup>
-            </div>
+        </div>
+        <select name="Sort By" id="SortByTop" class="leftsort ">
+            <option value="SortBy">Sort By</option>
+            <option value="Popular">Popular</option>
+            <option value="New">New</option>
+            <option value="HightoLow">Price : High to Low</option>
+            <option value="LowtoHigh">Price : Low to High</option>
+        </select>
+        <div class="rightPart">
 
         </div>
-        <div>
-            <img id="phone" src="https://images.bewakoof.com/nav_menu/landing-page-mobile-box-1558174497.jpg" alt="">
-        </div>
-        
+
     </div>
+
+
 </body>
+
+<script>
+
+
+    var mensData = [
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/naru-xiaomi-redmi-note-8-pro-mobile-cover-471243-1643961324-1.jpg",
+            name: "Naru Xiaomi Redmi Note 8 Pro Mobile Cover",
+            price: 299,
+            strikedoffprice: "₹279 For TriBe Member",
+            brand: "Xiaomi",
+            type: "New",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/pulse-xiaomi-redmi-note-7-pro-mobile-cover-xiaomi-redmi-note-7-pro-mobile-covers-291508-1620665476.jpg",
+            name: "Pulse Xiaomi Redmi Note 7 Pro Mobile Cover",
+            price: 249,
+            strikedoffprice: "₹229 For TriBe Member",
+            brand: "Xiaomi",
+            type: "Popular",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/one-love-xiaomi-redmi-note-6-pro-mobile-cover-470748-1643961935-1.jpg",
+            name: "One Love Xiaomi Redmi Note 6 Pro Mobile Cover",
+            price: 299,
+            strikedoffprice: "₹249 For TriBe Member",
+            brand: "Xiamoi",
+            type: "Popular",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/panda-scooter-designer-hard-cover-for-oneplus-8-pro-484366-1649394421-1.jpeg",
+            name: "Spider Stick Designer Hard Cover for OnePlus 8 Pro",
+            price: 399,
+            strikedoffprice: "₹359 For TriBe Member",
+            brand: "Oneplus",
+            type: "New",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/cross-panther-mc-oneplus-7-pro-mobile-cover-481955-1648795115-1.jpeg",
+            name: "Cross Panther MC Designer Hard Cover for OnePlus 7 Pro",
+            price: 299,
+            strikedoffprice: "₹269 For TriBe Member",
+            brand: "Oneplus",
+            type: "Popular",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/travel-always-designer-hard-cover-for-iphone-13-489197-1649735899-1.jpeg",
+            name: "Travel Always Designer Hard Cover for iPhone 13 Pro",
+            price: 299,
+            strikedoffprice: "₹269 For TriBe Member",
+            brand: "Apple",
+            type: "New",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/i-will-be-there-for-you-iphone-12-mobile-cover-iphone-12-mobile-covers-308169-1620677294.jpg",
+            name: "I Will Be There For You iPhone 12 Mobile Covers",
+            price: 249,
+            strikedoffprice: "₹229 For TriBe Member",
+            brand: "Apple",
+            type: "Popular",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/be-happy-samsung-galaxy-note-10-lite-mobile-cover-samsung-galaxy-note-10-lite-mobile-covers-302299-1620675067.jpg",
+            name: "Be Happy Samsung Galaxy Note 10 Lite Mobile Cover",
+            price: 249,
+            strikedoffprice: "₹229 For TriBe Member",
+            brand: "Samsung",
+            type: "New",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/rasta-designer-hard-cover-for-samsung-galaxy-a71-484664-1649397190-1.jpeg",
+            name: "Rasta Designer Hard Cover for Samsung Galaxy A71",
+            price: 399,
+            strikedoffprice: "₹359 For TriBe Member",
+            brand: "Samsung",
+            type: "Popular",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/peace-astrodesigner-hard-cover-for-realme-5-pro-484508-1649397048-1.jpeg",
+            name: "Peace Astro Designer Hard Cover for Realme 5 Pro",
+            price: 399,
+            strikedoffprice: "₹₹359 For TriBe Member",
+            brand: "Realme",
+            type: "New",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/rasta-designer-hard-cover-for-realme-6-pro-484649-1649395855-1.jpeg",
+            name: "Rasta Designer Hard Cover for Realme 6 Pro",
+            price: 399,
+            strikedoffprice: "₹359 For TriBe Member",
+            brand: "Realme",
+            type: "Popular",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/leaf-pattern-realme-x7-max-mobile-cover-466904-1643803238-1.jpg",
+            name: "Leaf Pattern Vivo Y73 Mobile Cover",
+            price: 399,
+            strikedoffprice: "₹369 For TriBe Member",
+            brand: "Vivo",
+            type: "New",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/naru-vivo-y91-mobile-cover-471178-1643962078-1.jpg",
+            name: "Naru Vivo Y91 Mobile Cover",
+            price: 299,
+            strikedoffprice: "₹279 For TriBe Member",
+            brand: "Vivo",
+            type: "Popular",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/true-love-oppo-f11-pro-mobile-cover-470554-1643962601-1.jpg",
+            name: "True Love Oppo F11 Pro Mobile Cover",
+            price: 299,
+            strikedoffprice: "₹279 For TriBe Member",
+            brand: "Oppo",
+            type: "New",
+        },
+        {
+            image_url:
+                "https://images.bewakoof.com/t320/one-love-oppo-f17-pro-mobile-cover-470762-1643962407-1.jpg",
+            name: "One Love Oppo F17 Pro Mobile Cover",
+            price: 299,
+            strikedoffprice: "₹279 For TriBe Member",
+            brand: "Oppo",
+            type: "Popular",
+
+        },
+    ];
+
+
+    var filterdData = JSON.parse(JSON.stringify(mensData));
+
+    //sorting top button function
+
+    document.querySelector('#SortByTop').addEventListener('change', function () {
+        var sortType = document.querySelector('#SortByTop').value;
+        if (sortType === 'SortBy') {
+            displayData(mensData);
+        }
+        else if (sortType == "Popular") {
+            var searchData = searchPopularAndnew(sortType);
+            displayData(searchData);
+        }
+        else if (sortType == "New") {
+            var searchData = searchPopularAndnew(sortType);
+            displayData(searchData);
+        }
+        else if (sortType == "LowtoHigh") {
+            filterdData.sort(function (a, b) { return a.price - b.price });
+            displayData(filterdData);
+        }
+        else if (sortType == "HightoLow") {
+            filterdData.sort(function (a, b) { return b.price - a.price });
+            displayData(filterdData);
+        }
+    });
+
+    //sorting left button function
+    document.querySelector('#SortByLeft').addEventListener('change', function () {
+        var sortType = document.querySelector('#SortByLeft').value;
+        if (sortType === 'SortBy') {
+            displayData(mensData);
+        }
+        else if (sortType == "Popular") {
+            var searchData = searchPopularAndnew(sortType);
+            displayData(searchData);
+        }
+        else if (sortType == "New") {
+            var searchData = searchPopularAndnew(sortType);
+            displayData(searchData);
+        }
+        else if (sortType == "LowtoHigh") {
+            filterdData.sort(function (a, b) { return a.price - b.price });
+            displayData(filterdData);
+        }
+        else if (sortType == "HightoLow") {
+            filterdData.sort(function (a, b) { return b.price - a.price });
+            displayData(filterdData);
+        }
+    });
+
+    //popular and New function
+    function searchPopularAndnew(sortType) {
+        var data = mensData.filter(function (product) {
+            if (product.type == sortType) {
+                return true;
+            }
+            return false;
+        });
+        return data;
+    }
+
+    var cartData;
+
+    if (localStorage.getItem('cartData') === null) {
+        cartData = [];
+    } else {
+        cartData = JSON.parse(localStorage.getItem('cartData'));
+    }
+
+    function displayData(mensData) {
+        document.querySelector('.rightPart').innerHTML = '';
+        mensData.forEach(function (menData) {
+
+            var box = document.createElement('div');
+            box.setAttribute('class', 'box');
+            box.style.cursor = "pointer";
+
+            var img = document.createElement('img');
+            img.src = menData.image_url;
+            img.setAttribute("class", "product")
+
+
+            var name = document.createElement('p');
+            name.textContent = menData.name;
+            name.setAttribute("id", "center");
+
+            var price = document.createElement('p');
+            price.innerText = "₹" + " " + menData.price;
+
+            var strikedoffprice = document.createElement('p');
+            strikedoffprice.innerText = menData.strikedoffprice;
+            strikedoffprice.style.backgroundColor = "#e9f0ea";
+
+
+            var cartButton = document.createElement('button');
+            cartButton.innerText = 'Add to cart';
+            cartButton.style.width = "100%";
+            cartButton.style.backgroundColor = "black";
+            cartButton.style.color = "white";
+            cartButton.style.cursor="pointer";
+
+            cartButton.addEventListener('click', function () {
+                cartData.push(menData);
+                console.log(cartData);
+                alert("item added successfuly to cart");
+                localStorage.setItem('cartData', JSON.stringify(cartData));
+            });
+
+
+            box.append(img, name, price, strikedoffprice, cartButton);
+            document.querySelector('.rightPart').append(box)
+        });
+
+    }
+    displayData(mensData);
+
+
+    //searching function for category
+
+    function searchMe(searchValue) {
+        var data = mensData.filter(function (product) {
+            if (product.name.includes(searchValue)) {
+                return true;
+            }
+            return false;
+        });
+        return data;
+        console.log(data);
+    }
+    //searching function call category
+    document.querySelector('#Model').addEventListener('change', function () {
+        var searchedValue = document.querySelector('#Model').value;
+        var searchedData = searchMe(searchedValue);
+        displayData(searchedData);
+    });
+
+
+
+    // Brand function
+    function searchBrand(searchValue) {
+        var data = mensData.filter(function (product) {
+            if (product.brand === searchValue) {
+                return true;
+            }
+            return false;
+        });
+        return data;
+    }
+    //Brand function call
+    document.querySelector('#Brand').addEventListener('change', function () {
+        var searchedValue = document.querySelector('#Brand').value;
+        var searchedData = searchBrand(searchedValue);
+        displayData(searchedData);
+    });
+
+
+    // filter clear function
+
+    document.querySelector("#clear").addEventListener("click", function () {
+        window.location.reload();
+    })
+
+</script>
 
 </html>
