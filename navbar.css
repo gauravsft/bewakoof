@@ -8,19 +8,17 @@ body {
     position: fixed;
     left:0%;
     border-bottom: 1px solid black;
-    opacity:100;
+    z-index: 1;
     
+}
 
-}
-nav{
-    margin-bottom:30%;
-}
 #navbar {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 30px);
-    margin: auto;
+    margin-bottom:auto;
     padding: 0%;
+    overflow: hidden;
     /* background-color:gray; */
     
 
@@ -97,24 +95,25 @@ a {
     font-size: 13px;
     border: none;
     outline: none;
-    color: white;
     padding: 5px;
-    background-color: inherit;
     font-family: inherit;
     margin: 0px;
+    
 }
 
 /**  Nav bar drop down content Css*/
 .subnavbtn:hover .subnav-content {
     display: block;
     color: black;
+    background-color: aliceblue;
+    
+    
 }
 
 .subnav-content {
     display: none;
     position: absolute;
     left: 0;
-    background-color: white;
     width: 80%;
     margin: 3px 0% auto 10%;
     z-index: 1;
@@ -138,6 +137,7 @@ a {
     height: 650px;
     flex-wrap: wrap;
     
+    
 
 }
 
@@ -146,6 +146,8 @@ a {
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: auto;
     flex-wrap: wrap;
+    opacity: 20;
+    background-color: aliceblue;
 }
 
 /* #topwear{grid-area:1/1/3/2;}
@@ -201,6 +203,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 200px);
     margin-top: 20px;
+    
 }
 
 .menvl {

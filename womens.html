@@ -12,7 +12,7 @@
 <style>
 
     body {
-            margin: 0% 10% auto 10%;
+            margin: 8% 10% auto 10%;
         }
 
       #filters>select {
@@ -24,7 +24,7 @@
 
     #filters>select>option {
         border: solid white;
-    }
+   }
 
     #Main {
         display: flex;
@@ -35,7 +35,7 @@
 
     #filters {
         position: fixed;
-        
+        background-color: white;
         display: flex;
         flex-direction: column;
         float: left;
@@ -51,6 +51,7 @@
         margin-left:300px;
         
     }
+
 
     h6 {
         margin: 4%;
@@ -739,18 +740,30 @@ if(localStorage.getItem('womenCartData')===null){
 
     });
 
-    
+  /*  function searchMe(searchValue){
+        var data=womensData.filter(function(product){
+            if(product.name.inludes(searchValue)){
+                return true;
+            }else{
+                return false;
+            }
+        });
+        return data;
+    }
+
+    document.querySelector("#searchInput").addEventListener('change',function(){
+        var searchedValue=document.querySelector("#searchInput").value;
+
+        var searchedData=searchMe(searchedValue);
+        displayData(searchedData);
+    });*/
     
 
 //Getting Data from Nav.Js
     import Navget from "./nav.js";
-console.log(Navget);
+    console.log(Navget);
     var navdata = document.getElementById("navget");
     navdata.innerHTML = Navget();
-
-
-
-
 
 </script>
 
