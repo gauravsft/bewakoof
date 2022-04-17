@@ -9,217 +9,14 @@
         hreflang="en-in">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="index.css">
+       
+    
 </head>
-<style>
-    * {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    #container {
-        
-        display: grid;
-        height: auto;
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        /* border: 1px solid red; */
-        margin: 10px;
-        margin-top: 70px;
-        text-align: center;
-    }
-
-
-
-    h1,
-    p,
-    h2 {
-        text-align: center;
-    }
-
-    #mobile_number {
-        padding: 20px 100px;
-    }
-
-    #web_continue_submit {
-        padding: 20px 140px;
-        height: 50px;
-        cursor: pointer;
-        color: white;
-        background-color: mediumturquoise;
-        font-size: medium;
-        margin-top: -10px;
-        width: 10;
-        border: none;
-        border-radius: 5px;
-    }
-
-    #hr {
-        display: flex;
-        height: 50px;
-        width: 500px;
-        /* border: 2px solid green; */
-        margin: auto;
-        padding-top: 30px;
-
-    }
-
-    #hr-1 {
-        height: 50px;
-        width: 240px;
-        margin: auto;
-    }
-
-    #hr-1 {
-        height: 50px;
-        width: 240px;
-        margin: auto;
-    }
-
-    span {
-        margin: 0px 5px;
-    }
-
-    #web_email_login {
-        padding: 4px;
-        margin: 0px 0px 10px;
-        font-size: medium;
-        height: 50px;
-        width: 350px;
-
-
-    }
-
-    #web_email_login-1 {
-        height: 20px;
-        width: 20px;
-
-
-    }
-
-    #text {
-        border: none;
-        outline: none;
-        font-size: medium;
-
-    }
-
-    .inputNumber {
-        display: flex;
-        height: 50px;
-        width: 360px;
-        margin: auto;
-        border: 1px solid black;
-        margin-bottom: 40px;
-        margin-left: 120px;
-        margin-top: 20px;
-        float: left;
-
-    }
-
-    #number {
-        width: 300px;
-        border: none;
-        font-size: 20px;
-
-
-    }
-
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    #cl {
-        height: 25px;
-        width: 25px;
-        margin-top: 12px;
-        margin-left: 10px;
-    }
-
-    #cc {
-        /* margin-left: 200px; */
-        margin-top: 14px;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .Box1 {
-        background-color: rgb(169, 169, 17);
-    }
-
-    #web_google_login {
-        padding: 4px;
-        margin: 0px 0px 10px;
-        font-size: large;
-        height: 50px;
-        width: 170px;
-
-    }
-
-    #google {
-        height: 15px;
-        width: 20px;
-    }
-
-    #web_facebook_login {
-        padding: 4px;
-        margin: 0px 0px 10px;
-        font-size: large;
-        height: 50px;
-        width: 170px;
-    }
-
-    #facebook {
-        height: 15px;
-        width: 20px;
-    }
-
-    /* Medium */
-    @media all and (min-width:100px) and (max-width:450px) {
-
-        #container {
-
-            grid-template-columns: repeat(1, 1fr);
-
-
-
-
-        }
-
-        .inputNumber {
-
-            margin-left: 130px;
-
-
-
-        }
-
-    }
-
-    /* Small */
-    @media all and (min-width: 450px) and (max-width:850px) {
-        #container {
-
-            grid-template-columns: repeat(1, 1fr);
-
-
-
-
-        }
-
-        /* .inputNumber {
-
-      margin-left: 167.5px;
-
-
-    } */
-    }
-</style>
 
 <body>
 
     <!-- navbar part -->
-    <nav id="topBar">
+    <nav id="topBar" style="margin-top: -4.5%;">
         <div id="navbar">
             <div
                 style="background-color:whitesmoke;width:100%;height:min-content;padding-top: 3px; padding-bottom: 6px;">
@@ -743,58 +540,21 @@
 
     </nav>
 
-    //login part
-    <div id="container">
-
-        <div class="Box1">
-            <h2>Welcome to the world of Bewakoof!</h2>
-            <img src="https://images.bewakoof.com/web/group-19-1617704502.png" alt="login_welcome">
-        </div>
-
-        <div class="Box2">
-            <h1>Log in / Sign up</h1>
-            <p>for Latest trends, exciting offers and everything Bewakoof!</p>
-            <form>
-                <div class="inputNumber">
-
-                    <img id="cl" src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="cl">
-                    <span id="cc">+91</span>
-                    <input type="number" id="text" placeholder="Enter Your Number">
-
-                </div>
-                <br>
 
 
-                <button id="web_continue_submit" type="submit" class="loginSubmit">CONTINUE</button>
-                <div id="hr">
-                    <div id="hr-1">
-                        <hr>
-                    </div>
-                    <span>OR</span>
-                    <div id="hr-1">
-                        <hr>
-                    </div>
-                </div>
-
-
-
-            </form>
-
-            <button id="web_email_login"><img id="web_email_login-1"
-                    src="https://images.bewakoof.com/web/carbon-email-1620039620.png">&nbsp&nbsp CONTINUE WITH
-                EMAIL</button><br>
-
-            <button id="web_google_login"><img id="google"
-                    src="https://images.bewakoof.com/web/group-3-2x-1558356035.png">
-                Google</button>
-
-            <button id="web_facebook_login"><img id="facebook"
-                    src="https://images.bewakoof.com/web/bi-facebook2x-1620886445.png"> Facebook</button>
-
-
-            <p>By creating an account or logging in, you agree with Bewakoof's Terms <br>
-                and Conditions and Privacy Policy.</p>
-
+    <!-- main part -->
+    <div id="base">
+        <div id="upper">
+            <div>
+                <img src="https://images.bewakoof.com/web/Gender-Picker-Banner-desktop-header-v1.jpg" alt="">
+            </div>
+            <div id="photo">
+                <img src="https://images.bewakoof.com/web/Gender-Picker-Banner-desktop-men-v1.jpg" alt="Shop Men">
+                <img src="https://images.bewakoof.com/web/Gender-Picker-Banner-desktop-women-v1.jpg" alt="Shop Women">
+            </div>
+            <div>
+                <img src="https://images.bewakoof.com/web/Gender-Picker-Banner-desktop-footer-v1.jpg" alt="">
+            </div>
         </div>
     </div>
     <div class="part2">
@@ -1073,39 +833,7 @@
         </div>
     </div>
 </body>
-<script>
-    // Link these all page using js
 
-    document.querySelector("#web_continue_submit").addEventListener("click", function () {
-        event.preventDefault()
-
-        window.location.href = "Signup.html";
-
-
-    })
-
-
-
-    document.querySelector("#web_email_login").addEventListener("click", function () {
-        event.preventDefault()
-
-        window.location.href = "continueWithEmail.html";
-
-    })
-
-    document.querySelector("#web_google_login").addEventListener("click", function () {
-        window.location.href = "https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=140947639712-ukpgitufo1i1gc6nmd8o1l14tcu72nt2.apps.googleusercontent.com&scope=email%20profile%20openid&response_type=token&redirect_uri=https%3A%2F%2Fwww.bewakoof.com%2Flogin%2Fgoogle&flowName=GeneralOAuthFlow"
-
-    })
-
-    document.querySelector("#web_facebook_login").addEventListener("click", function () {
-        window.location.href = "https://www.facebook.com/login.php?skip_api_login=1&api_key=1548728332017744&kid_directed_site=0&app_id=1548728332017744&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D1548728332017744%26scope%3Dpublic_profile%252Cemail%252Cuser_birthday%252Cuser_gender%252Cuser_hometown%252Cuser_location%26response_type%3Dtoken%26redirect_uri%3Dhttps%253A%252F%252Fwww.bewakoof.com%252Flogin%252Ffacebook%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dbc4dfab9-3f86-4d7e-8962-f05a5eaa13d1%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.bewakoof.com%2Flogin%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%23_%3D_&display=page&locale=en_GB&pl_dbl=0"
-
-    })
-
-
-
-
-</script>
+<script src="index.js"></script>
 
 </html>
