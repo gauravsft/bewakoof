@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mediumbar{
+        display: flex;
+        flex-flow: inherit;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        width:100%;
+        height:55px;
+        background-color: #fdd835;
+    }
+    .logodiv{
+        padding: 15px;
+        margin: 0%;
+    }
+    label{
+        display: inline-block;
+        max-width: 100%;
+        font-weight: 700px;
+    }
+    .iconMenu{
+        text-align: right;
+        position: absolute;
+        top:0;
+        right:10px;
+
+    }
+    .mediumbar #sideMenu {
+    display: none;
+}
+.iconMenuOption {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.iconMenuOption span {
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    padding: 9px 12px 0;
+    line-height: 40px;
+}
+
+.searchContainer{
+    width:100%;
+    text-align: left;
+
+}.iconMenuOption span .header-icon {
+    height: 20px;
+    width: 20px;
+}
+
+</style>
+<body>
+    <nav class="mediumbar">
+        <label class="logodiv">
+            <img src="	https://images.bewakoof.com/web/hamburger-menu-3x-1635762051.png">
+        </label>
+        <input type="checkbox" id="sideMenu">
+        <div class="actionMenu" style="display:block">
+            <img src="https://images.bewakoof.com/web/bewakoof-logo-white-1648550013.png">
+        <a href="homepage.html"></a>
+        </div>
+        <div class="iconMenuOption">
+            <span class style="width:auto">
+                <form class="searchContainer" style="display:inline-block">
+                    <label>
+                        <img src="https://images.bewakoof.com/web/search-glass.png" class="header-icon">
+                    </label>
+                </form>
+            </span>
+
+            <span>
+                <div>
+                    <img src="  https://images.bewakoof.com/web/wishlist-1649159090.svg" class="header-icon" >
+                </div>
+            </span>
+            <a href="./cart.html"> 
+                <span>
+                    <img src="https://images.bewakoof.com/web/shopping-cart-1648186846.svg" class="header-icon">
+                    <span></span>
+                </span>
+            </a>
+        </div>
+
+    </nav>
+</body>
+<script type="module">
+    document.querySelector(".logodiv").addEventListener("click",function(){
+        console.log("hello Menu");
+
+    })
+</script>
+</html>
