@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bewakoof</title>
-</head>
-
-<link rel="stylesheet" href="./navbar.css">
-
-<body>
+const Navget = () => {
+    return (`
     <nav id="topBar">
         <div id="navbar">
             <div style="background-color:whitesmoke;width:100%;height:min-content;padding-top: 3px; padding-bottom: 6px;">
@@ -521,7 +510,7 @@
                         <img style="width:25px; height:25px" src="https://images.bewakoof.com/web/heart-wishlist.png">
                     </div>
                     <div>
-                    <a href="./cart.html"><img style="width:25px; height:25px"
+                    <a href="cart.html"><img style="width:25px; height:25px"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrFXxmNkpIPqUArp-tmDsjrXrmkShAntIRw&usqp=CAU"></a>
                         </div>
                     </div>
@@ -533,8 +522,7 @@
     </div>
 
 </nav>
-<!--Mobile Nav Bar -->
-
-</body>
-
-</html>
+    `
+    )
+}
+export default Navget;
