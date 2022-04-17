@@ -8,7 +8,7 @@
     <title>Online Shopping for Men, Women Clothing & Accessories at Bewakoof</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://images.bewakoof.com/web/favicon-1635856217.png"
         hreflang="en-in">
-
+    
     <link rel="stylesheet" href="navbar.css">
     <style>
         body {
@@ -150,7 +150,7 @@
                     <div id="contactUs">
                         <a href="contactus.html">Contact us</a>
 
-                        <a href="">Track </a>
+                        <a href="login.html">Track </a>
                     </div>
                 </div>
             </div>
@@ -865,6 +865,7 @@
     </div>
 
 
+
 </body>
 
 <script>
@@ -872,7 +873,7 @@
 
     var mensData = [
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/super-bros-stark-half-sleeve-t-shirt-489649-1649433819-1.jpg",
             name: "Men's Red Super Bros Cap Typography T-shirt",
             price: 299,
@@ -882,7 +883,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/super-bros-cap-half-sleeve-t-shirt-489648-1649433798-1.jpg",
             name: "Men's Blue Super Bros Cap Typography T-shirt",
             price: 299,
@@ -892,7 +893,7 @@
             type: "Popular",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/avengers-aop-shirt-avl-362240-1646674562-1.jpg",
             name: "Men's Blue Avengers AOP Typography Shirt",
             price: 799,
@@ -902,7 +903,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/men-s-black-naruto-1-1-oversized-t-shirt-469020-1649262786-1.jpg",
             name: "Men's Black Anime Flamed T-shirt",
             price: 799,
@@ -912,7 +913,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/dark-forest-green-plain-casual-men-short-471437-1649412670-1.jpg",
             name: "Men's Forest Green Solid Shorts",
             price: 749,
@@ -922,7 +923,7 @@
             type: "Popular",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/men-s-black-one-piece-oversized-t-shirt-468376-1649262750-1.jpg",
             name: "Men's Black NASA Astronaut T-shirt",
             price: 399,
@@ -932,7 +933,7 @@
             type: "Popular",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/nasa-astronaut-half-sleeve-t-shirt-481834-1648011573-1.jpg",
             name: "Men's Black Anime Printed Oversized T-shirt",
             price: 749,
@@ -942,7 +943,7 @@
             type: "Popular",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/men-s-black-attack-on-titan-oversized-t-shirt-468371-1649262570-1.jpg",
             name: "Men's White Revolution Loading Oversized T-shirt",
             price: 399,
@@ -952,7 +953,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/revolution-loading-half-sleeve-t-shirt-481840-1648011616-1.jpg",
             name: "Men's Grey Anime Tie & Die Oversized T-shirt",
             price: 899,
@@ -962,7 +963,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/men-s-black-attack-on-titan-oversized-t-shirt-468319-1649263001-1.jpg",
             name: "Men's Black Eyes of Uchiha T-shirt",
             price: 399,
@@ -972,7 +973,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/nasa-astronaut-half-sleeve-t-shirt-481838-1648011595-1.jpg",
             name: "Men's Red NASA Astronaut T-shirt",
             price: 399,
@@ -982,7 +983,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/doctor-strange-full-sleeve-t-shirt-475176-1645086527-1.jpg",
             name: "Men's White Vengeance T-shirt",
             price: 399,
@@ -992,7 +993,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/men-s-birthday-yellow-loose-fit-t-shirt-479971-1648642569-1.jpg",
             name: "Men's White 4x4 Off Road T-shirt",
             price: 399,
@@ -1002,7 +1003,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/jet-black-half-sleeve-t-shirt-106-1637159826-5.jpg",
             name: "Men's Black T-shirt",
             price: 349,
@@ -1012,7 +1013,7 @@
             type: "New",
         },
         {
-            image_url:
+            image:
                 "https://images.bewakoof.com/t320/white-long-sleeve-henley-t-shirt-405278-1646674135-1.jpg",
             name: "Men's White Henley T-shirt",
             price: 449,
@@ -1102,7 +1103,7 @@
             box.style.cursor = "pointer";
 
             var img = document.createElement('img');
-            img.src = menData.image_url;
+            img.src = menData.image;
             img.setAttribute("class", "product")
 
 

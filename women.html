@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Womens clothing</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://images.bewakoof.com/web/favicon-1635856217.png"
+        hreflang="en-in">
     <link rel="stylesheet" href="navbar.css">
 </head>
 
 <style>
     body {
         margin: 0% 10% auto 10%;
+    }
+
+    #heading {
+        margin-top: 80px;
+        margin-left: 10%;
     }
 
     #filters>select {
@@ -100,6 +106,10 @@
             height: 350px;
         }
 
+        #heading {
+            margin-top: 20px;
+        }
+
     }
 
 
@@ -127,6 +137,10 @@
             height: auto;
         }
 
+        #heading {
+            margin-top: 20px;
+        }
+
     }
 </style>
 
@@ -138,7 +152,7 @@
 
     <div>
         <div style="display:flex; z-index:-20;">
-            <h1>Womens clothing</h1>
+            <h1 id="heading">Womens clothing</h1>
             <h1 id="len"></h1>
         </div>
         <!-- Filters right side -->
@@ -295,6 +309,8 @@
             </div>
             <!-- Womens div End  -->
         </div>
+
+        
 </body>
 <script src='navbar.html'></script>
 <script type="module">
@@ -589,10 +605,10 @@
 
     var cartData;
     var filterData = JSON.parse(JSON.stringify(womensData));
-    if (localStorage.getItem('womenCartData') === null) {
+    if (localStorage.getItem('cartData') === null) {
         cartData = [];
     } else {
-        cartData = JSON.parse(localStorage.getItem("womenCartData"));
+        cartData = JSON.parse(localStorage.getItem("cartData"));
     }
 
     function displayData(womensData) {
@@ -621,7 +637,7 @@
                 cartData.push(data);
                 ///console.log(cartData);
 
-                localStorage.setItem('womenCartData', JSON.stringify(cartData));
+                localStorage.setItem('cartData', JSON.stringify(cartData));
                 window.location.reload();
             });
             document.querySelector('#len').innerText = "(" + womensData.length + ")";

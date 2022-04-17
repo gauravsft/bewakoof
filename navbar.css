@@ -8,7 +8,7 @@ body {
     position: fixed;
     left:0%;
     border-bottom: 1px solid black;
-
+    z-index: 1;
     
 
 }
@@ -20,8 +20,9 @@ nav{
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 30px);
     margin: auto;
-    position: relative;
+    /* position: ; */
     padding: 0%;
+    overflow: inherit;
     align-items: center;
     /* background-color:gray; */
     
@@ -110,6 +111,7 @@ a {
 .subnavbtn:hover .subnav-content {
     display: block;
     color: black;
+    background-color: aliceblue;
 }
 
 .subnav-content {
@@ -148,6 +150,8 @@ a {
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: auto;
     flex-wrap: wrap;
+    opacity: 20;
+    background-color: aliceblue;
 }
 
 /* #topwear{grid-area:1/1/3/2;}
