@@ -1,68 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping for Men, Women Clothing & Accessories at Bewakoof</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://images.bewakoof.com/web/favicon-1635856217.png"
-        hreflang="en-in">
-
-    <link rel="stylesheet" href="navbar.css">
-    <style>
-        body {
-            margin: 0%;
-            padding: 0%;
-        }
-
-        h1 {
-            margin-top: 70px;
-            text-align: center;
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        p {
-            margin-top: -30px;
-            text-align: center;
-            font-size: 25px;
-        }
-
-        .offers {
-            width: 80%;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            margin: auto;
-            gap: 20px;
-        }
-
-        .offers>div>img {
-            width: 100%;
-            cursor: pointer;
-        }
-
-        .thirdPartyOffer {
-            width: 100%;
-            grid-template-columns: repeat(1, 1fr);
-            margin-top: 25px;
-        }
-
-        .thirdPartyOffer>div>img {
-            width: 100%;
-            cursor: pointer;
-        }
-    </style>
-
-</head>
-
-<body>
-
+const Navget = () => {
+    return (`
     <!-- navbar part -->
-    <nav id="topBar" style="margin-top: -70px;">
+    <nav id="topBar">
         <div id="navbar">
-            <div
-                style="background-color:whitesmoke;width:100%;height:min-content;padding-top: 3px; padding-bottom: 6px;">
+            <div style="background-color:whitesmoke;width:100%;height:min-content;padding-top: 3px; padding-bottom: 6px;">
                 <div class="links">
                     <a href="offers.html">Offer</a>
                     <a href="fanbook.html">Fanbook</a>
@@ -570,75 +511,19 @@
                         <img style="width:25px; height:25px" src="https://images.bewakoof.com/web/heart-wishlist.png">
                     </div>
                     <div>
-                        <img id="cart" style="width:25px; height:25px; cursor: pointer;"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrFXxmNkpIPqUArp-tmDsjrXrmkShAntIRw&usqp=CAU"></a>
+                    <img id="cart" style="width:25px; height:25px; cursor: pointer;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrFXxmNkpIPqUArp-tmDsjrXrmkShAntIRw&usqp=CAU"></a>
+                        </div>
                     </div>
-                </div>
 
 
 
             </div>
         </div>
-        </div>
-
-    </nav>
-
-    
-    <h1>Bewakoof Offers</h1>
-    <p>Find the best offers across our platforms on this page.</p>
-
-    <div class="offers">
-        <div>
-            <img id="one"
-                src="https://images.bewakoof.com/uploads/grid/app/bewakoof-desktop-1440---x-150---prep10-1625739466.png"
-                alt="">
-        </div>
-        <div>
-            <img id="two" src="https://images.bewakoof.com/uploads/grid/app/offer-strips-desktop-new100-1625486756.png"
-                alt="">
-        </div>
-        <div>
-            <img id="three"
-                src="https://images.bewakoof.com/uploads/grid/app/bewakoof-desktop-1440---x-150---tribe-1625739880.png"
-                alt="">
-        </div>
     </div>
 
-    <div class="thirdPartyOffer">
-        <div>
-            <img id="four"
-                src="https://images.bewakoof.com/uploads/grid/app/Desktop-banner-Half-Dhani-Cashback-1637915728.png"
-                alt="">
-        </div>
-        <div>
-            <img id="five"
-                src="https://images.bewakoof.com/uploads/grid/app/Desktop-banner-Half-MobiKwik-Cashback-1638263541.png"
-                alt="">
-        </div>
-    </div>
-</body>
-
-<script>
-    document.querySelector("#one").addEventListener("click", function () {
-        window.location.href = "offercuppon1.html";
-    });
-
-    document.querySelector("#two").addEventListener("click", function () {
-        window.location.href = "offercuppon2.html";
-    });
-
-    document.querySelector("#three").addEventListener("click", function () {
-        window.location.href = "offercuppon3.html";
-    });
-
-    document.querySelector("#four").addEventListener("click", function () {
-        window.location.href = "offercuppon4.html";
-    });
-
-    document.querySelector("#five").addEventListener("click", function () {
-        window.location.href = "offercuppon5.html";
-    });
-
-</script>
-
-</html>
+</nav>
+    `
+    )
+}
+export default Navget;
