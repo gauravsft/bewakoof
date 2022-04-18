@@ -5,7 +5,7 @@ document.querySelector("#cart").addEventListener("click",cartfn);
 // console.log(l)
 
 function cartfn(){
-    if(JSON.parse(localStorage.getItem('cartData'))===null){
+    if(JSON.parse(localStorage.getItem('cartData'))===null  || JSON.parse(localStorage.getItem('cartData')).length==0 ){
         window.location.href="ecart.html";
     }
     else{
