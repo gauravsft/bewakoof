@@ -9,10 +9,10 @@
 <style>
     .mediumbar{
         display: flex;
-        flex-flow: inherit;
+        position: fixed;
         justify-content: flex-start;
         align-items: center;
-        position: relative;
+        overflow: inherit;
         width:100%;
         height:55px;
         background-color: #fdd835;
@@ -21,11 +21,11 @@
         padding: 15px;
         margin: 0%;
     }
-    label{
+    /* label{
         display: inline-block;
         max-width: 100%;
         font-weight: 700px;
-    }
+    } */
     .iconMenu{
         text-align: right;
         position: absolute;
@@ -35,7 +35,7 @@
     }
     .mediumbar #sideMenu {
     display: none;
-}
+    }
 .iconMenuOption {
     text-align: right;
     position: absolute;
@@ -49,7 +49,10 @@
     padding: 9px 12px 0;
     line-height: 40px;
 }
-
+li{
+    display: none;
+    list-style: none;
+}
 .searchContainer{
     width:100%;
     text-align: left;
@@ -58,14 +61,50 @@
     height: 20px;
     width: 20px;
 }
+#sideMenu:checked~ul.nav_menu li{
+    display: block;
+    
+}
+#sideMenu:checked~ul.nav_menu{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+    margin-top: 620px;
+    width:300px;
+    margin-left: -350px;
+    float: left;
+}
+.nav_menu>li{
+    padding-bottom: 20px;
+    
+    
+}
+.nav_menu>li>a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media all and (min-width:85px) and (max-width:950px){
+    #sideMenu:checked~ul.nav_menu{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   
+    margin-top: 620px;
+    width:300px;
+    margin-left: -350px;
+    float: left;
+}
+
+}
 
 </style>
 <body>
     <nav class="mediumbar">
-        <label class="logodiv">
+        <input type="checkbox" id="sideMenu">
+        <label class="logodiv" for="sideMenu">
             <img src="	https://images.bewakoof.com/web/hamburger-menu-3x-1635762051.png">
         </label>
-        <input type="checkbox" id="sideMenu">
+        
         <div class="actionMenu" style="display:block">
             <img src="https://images.bewakoof.com/web/bewakoof-logo-white-1648550013.png">
         <a href="homepage.html"></a>
@@ -81,7 +120,7 @@
 
             <span>
                 <div>
-                    <img src="  https://images.bewakoof.com/web/wishlist-1649159090.svg" class="header-icon" >
+                    <img src=" https://images.bewakoof.com/web/wishlist-1649159090.svg" class="header-icon" >
                 </div>
             </span>
             <a href="./cart.html"> 
@@ -92,12 +131,26 @@
             </a>
         </div>
 
+    <ul class="nav_menu">
+        <li><a href="./login.html"><h4>Login / SignUp</h4></a></li>
+        <li><h4>Shop In</h4></li>
+        <li><a href="./men.html">Men</a></li>
+        <li><a href="./womens.html">Women</a></li>
+    <li>
+        <select>
+            <option value="none">Accessories</option>
+            <option value="">Mobile covers</option>
+            <option value="">Backpacks</option>
+            <option value="">Caps</option>
+            <option value="">Masks</option>
+        </select>
+    </li>
+        <li><h4>ENGAGE</h4></li>
+        <li><a href="">Customize your own T-shirts</a></li>
+        <li><a href="">Vote for Design</a></li>
+        <li><a href="">Refer and Earn</a></li>
+        <li><a href="">TriBe Membership</a></li>
+    </ul>
     </nav>
 </body>
-<script type="module">
-    document.querySelector(".logodiv").addEventListener("click",function(){
-        console.log("hello Menu");
-
-    })
-</script>
 </html>
