@@ -5,47 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="./cart.css">
 </head>
 <style>
-    .cartnavbar{
-        width:100%;
-        height:auto;
-       
-
-    }
-    .cartnavbar img{
-        height:20%;
-        width:18%;
-    }
-    #rmvbtn{
-        width: 200px;
-        height: 30px;
-        background-color: white;
-        font-size: 15px;
-
-    }
-    #rmvbtn:hover{
-        width: 200px;
-        height: 30px;
-        background-color: rgb(220, 228, 228);
-        align-items: center;
-
-    }
     
-    #container{
-        display: grid;
-        grid-template-columns:repeat(1,70%);
-        grid-template-rows: auto;
-        gap:20px;
-        justify-content: center;
-        
-
-    }
-
-#container img{
-    float:right;
-}
- 
 </style>
 <body>
     <div class="cartnavbar">
@@ -55,19 +18,39 @@
         
     </div>
     <hr>
-
-    <div style="display:flex">
-        <h3 style="margin-left: 15% ;padding-right: 1%;">My Bag</h3>
-        <h3 id="len"></h3>
+<div id="entire">
+   <div> 
+    <div style="display:flex;margin-left:-15%;gap:2%">
+        <h2 style="margin-left: 15% ;float:top;">My Bag</h2>
+        <h2 id="len"></h2>
     </div>
     
     <div id="container">
-        
-
+        <!-- This is for displaying data from cartData -->
+       
     </div>
-
+</div>
+<div>
+    <h2 >Price Summary</h2>
+    <div id="priceSummary">
+        <div id="left">
+            <p>Total MRP (inl. of taxes</p>
+            <p>Delivery Fee</p>
+            <p>Bag Discount</p>
+            <P>Subtotal</P>
+            <p id="yourSaving">Your saving ₹ 1400 on this order</p>
+        </div>
+        <div id="right">
+          
+            <p id="tPrice" class=""></p>
+            <p id="dFee"class="">FREE</p>
+            <p id="bagdiscount">-₹1400</p>
+            <p id="subtotal"></p>
+        </div>
+    </div>
     
-    
+</div>
+</div>
 </body>
 <script>
     var cartData=JSON.parse(localStorage.getItem("womenCartData"));
@@ -109,11 +92,18 @@
         box.append(img,name,price,saved,size,cartButton);
         
         
-        document.querySelector('#len').innerText=cartData.length+" "+"Item";
+        document.querySelector('#len').innerText= cartData.length+" "+"Item(s)";
         document.querySelector("#container").append(box);
         });
            
     }
-    displayCartData();
+
+    var totalPrice=cartData.reduce(function(sum,ele){
+    return sum+Number(ele.price);
+},0);
+document.querySelector("#tPrice").innerText=totalPrice;
+document.querySelector("#subtotal").innerText=(+totalPrice-1400);
+
+displayCartData(cartData);
 </script>
 </html>

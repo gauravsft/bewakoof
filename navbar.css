@@ -1,6 +1,6 @@
 body {
     font-family: montserrat, sans-serif;
-    margin: 0% 10% 0% 10%;
+    margin: -0.25% 10% 0% 10%;
 }
 #topBar {
     width: 100%;
@@ -19,7 +19,7 @@ body {
     margin-bottom:auto;
     padding: 0%;
     overflow: hidden;
-    /* background-color:gray; */
+background-color:whitesmoke;
     
 
 }
@@ -39,8 +39,8 @@ body {
     gap: 2%;
     flex-wrap: nowrap;
     word-wrap: normal;
-    margin: 0% 10% 0% 10%;
-    /* background-color: antiquewhite; */
+    margin: -0.5% 10% 0% 10%;
+    /* background-color: rgb(214, 129, 18);  */
 }
 
 h3 {

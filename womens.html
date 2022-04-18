@@ -7,153 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Womens clothing</title>
     <link  rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./womens.css">
 </head>
 
-<style>
-
-    body {
-            margin: 0% 0% auto 8%;
-        }
-
-      #filters>select {
-        margin-top: 30px;
-        width: 250px;
-        border: solid white;
-
-    }
-
-    #filters>select>option {
-        border: solid white;
-   }
-
-    #Main {
-        display: flex;
-        margin-left: 10%;
-        margin-right: 10%;
-    
-    }
-
-    #filters {
-        position: fixed;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        float: left;
-    
-    }
-
-    #container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: auto;
-        margin-bottom: auto;
-        grid-gap: 10px;
-        margin-left:300px;
-        
-    }
-
-
-    h6 {
-        margin: 4%;
-    }
-
-
-    #filter {
-        display: flex;
-        justify-content: right;
-        margin-right: 10%;
-
-    }
-
-    #sortFilterCss {
-        display: flex;
-        width: auto;
-        height: 1%;
-
-    }
-
-    #filters>option {
-        width: auto;
-        height: 5%;
-
-    }
-
-    @media all and (min-width:0px) and (max-width:450px) {
-        body {
-            margin: 0% 10% auto 10%;
-        }
-       
-        
-        #Main {
-        display: flex;
-        flex-direction: column;
-    
-        }
-        #filter {
-        
-        justify-content: left;
-        margin-right: 10%;
-        
-
-    }
-        #filters {
-            width:80%;
-            float:top;
-            position:sticky;
-        }
-        #filters>select {
-        margin-top: 30px;
-        width: auto;
-        border: solid white;
-
-    }
-
-        #container {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        margin: auto;
-        grid-gap: 10px;
-        justify-content: center;
-        margin-top: 10%;
-    }
-}
-
-
-    @media all and (min-width:450px) and (max-width:900px) {
-        body {
-            margin: 0% 10% auto 10%;
-        }
-        #Main {
-        display: flex;
-        flex-direction: column;
-    
-        }
-        #filters {
-            width:80%;
-            float:top;
-            position:sticky;
-        }
-        #filters>select {
-        margin-top: 30px;
-        width: auto;
-        border: solid white;
-
-        }
-        #container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-bottom: auto;
-            margin-left: 0%;
-
-        }
-
-        img {
-            width: 100%;
-            height:auto;
-        }
-
-    }
-</style>
 
 <body>
     <!-- Nav bar place holder -->
@@ -162,8 +18,8 @@
 </div>   
 
 
-        <div style="display:flex">
-        <h1 >Womens clothing</h1>
+        <div style="display:flex; z-index:-20;">
+        <h1 id="heading">Womens clothing</h1>
         <h1 id="len"></h1>
         </div>
         <!-- Filters right side -->
@@ -768,23 +624,23 @@ if(localStorage.getItem('womenCartData')===null){
 
     });
 
-  /*  function searchMe(searchValue){
-        var data=womensData.filter(function(product){
-            if(product.name.inludes(searchValue)){
-                return true;
-            }else{
-                return false;
-            }
-        });
-        return data;
-    }
+    // function searchMe(searchValue){
+    //     var data=womensData.filter(function(product){
+    //         if(product.name.inludes(searchValue)){
+    //             return true;
+    //         }else{
+    //             return false;
+    //         }
+    //     });
+    //     return data;
+    // }
 
-    document.querySelector("#searchInput").addEventListener('change',function(){
-        var searchedValue=document.querySelector("#searchInput").value;
+    // document.querySelector("#searchInput").addEventListener('change',function(){
+    //     var searchedValue=document.querySelector("#searchInput").value;
 
-        var searchedData=searchMe(searchedValue);
-        displayData(searchedData);
-    });*/
+    //     var searchedData=searchMe(searchedValue);
+    //     displayData(searchedData);
+    // });
     
 
 //Getting Data from Nav.Js
