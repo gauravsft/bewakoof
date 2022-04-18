@@ -9,6 +9,6 @@ function cartfn(){
         window.location.href="ecart.html";
     }
     else{
-        window.location.href="#";
+        window.location.href="cart.html";
     }
 }
